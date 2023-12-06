@@ -13,5 +13,6 @@ target/m52xq/patches/wpss/vendor/firmware/** binary
 *.so binary
 *.jar binary
 *.pk8 binary
+*.ogg binary
 *.png binary
 prebuilts/samsung/r0qxxx/system/priv-app/wallpaper-res/wallpaper-res.apk filter=lfs diff=lfs merge=lfs -text
