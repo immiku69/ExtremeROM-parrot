@@ -1,15 +1,23 @@
 SKIPUNZIP=1
 
 mv -f "$WORK_DIR/vendor/tee" "$WORK_DIR/vendor/tee_sea"
-cp -a --preserve=all "$SRC_DIR/target/a54x/patches/tee/vendor/"* "$WORK_DIR/vendor"
-mv -f "$WORK_DIR/vendor/tee" "$WORK_DIR/vendor/tee_eur"
 mkdir -p "$WORK_DIR/vendor/tee"
+cp -a --preserve=all "$SRC_DIR/target/a54x/patches/vendor/vendor/etc/"* "$WORK_DIR/vendor/etc"
+cp -a --preserve=all "$SRC_DIR/target/a54x/patches/vendor/vendor/firmware" "$WORK_DIR/vendor/firmware/eur"
+cp -a --preserve=all "$SRC_DIR/target/a54x/patches/vendor/vendor/tee" "$WORK_DIR/vendor/tee_eur"
 
 sed -i "s./vendor/tee./vendor/tee_sea.g" "$WORK_DIR/configs/file_context-vendor"
 sed -i "s.vendor/tee.vendor/tee_sea.g" "$WORK_DIR/configs/fs_config-vendor"
 if ! grep -q "vendor/tee_eur" "$WORK_DIR/configs/file_context-vendor"; then
     {
-        echo "/vendor/etc/init/tee_blobs\.rc u:object_r:vendor_configs_file:s0"
+        echo "/vendor/etc/init/vendor_blobs\.rc u:object_r:vendor_configs_file:s0"
+        echo "/vendor/firmware/eur u:object_r:vendor_fw_file:s0"
+        echo "/vendor/firmware/eur/AIE\.bin u:object_r:vendor_fw_file:s0"
+        echo "/vendor/firmware/eur/calliope_sram\.bin u:object_r:vendor_fw_file:s0"
+        echo "/vendor/firmware/eur/mfc_fw\.bin u:object_r:vendor_fw_file:s0"
+        echo "/vendor/firmware/eur/os.checked\.bin u:object_r:vendor_fw_file:s0"
+        echo "/vendor/firmware/eur/pablo_icpufw\.bin u:object_r:vendor_fw_file:s0"
+        echo "/vendor/firmware/eur/vts\.bin u:object_r:vendor_fw_file:s0"
         echo "/vendor/tee u:object_r:tee_file:s0"
         echo "/vendor/tee_eur u:object_r:tee_file:s0"
         echo "/vendor/tee_eur/00000000-0000-0000-0000-000000010081 u:object_r:tee_file:s0"
@@ -54,7 +62,14 @@ if ! grep -q "vendor/tee_eur" "$WORK_DIR/configs/file_context-vendor"; then
 fi
 if ! grep -q "vendor/tee_eur" "$WORK_DIR/configs/fs_config-vendor"; then
     {
-        echo "vendor/etc/init/tee_blobs.rc 0 0 644 capabilities=0x0"
+        echo "vendor/etc/init/vendor_blobs.rc 0 0 644 capabilities=0x0"
+        echo "vendor/firmware/eur 0 2000 755 capabilities=0x0"
+        echo "vendor/firmware/eur/AIE.bin 0 0 644 capabilities=0x0"
+        echo "vendor/firmware/eur/calliope_sram.bin 0 0 644 capabilities=0x0"
+        echo "vendor/firmware/eur/mfc_fw.bin 0 0 644 capabilities=0x0"
+        echo "vendor/firmware/eur/os.checked.bin 0 0 644 capabilities=0x0"
+        echo "vendor/firmware/eur/pablo_icpufw.bin 0 0 644 capabilities=0x0"
+        echo "vendor/firmware/eur/vts.bin 0 0 644 capabilities=0x0"
         echo "vendor/tee 0 2000 755 capabilities=0x0"
         echo "vendor/tee_eur 0 2000 755 capabilities=0x0"
         echo "vendor/tee_eur/00000000-0000-0000-0000-000000010081 0 0 644 capabilities=0x0"
@@ -100,4 +115,5 @@ fi
 
 if ! grep -q "tee_file (dir (mounton" "$WORK_DIR/vendor/etc/selinux/vendor_sepolicy.cil"; then
     echo "(allow init_33_0 tee_file (dir (mounton)))" >> "$WORK_DIR/vendor/etc/selinux/vendor_sepolicy.cil"
+    echo "(allow init_33_0 vendor_fw_file (file (mounton)))" >> "$WORK_DIR/vendor/etc/selinux/vendor_sepolicy.cil"
 fi
