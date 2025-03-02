@@ -30,6 +30,5 @@ target/a71/patches/*/*/** binary
 target/a73xq/patches/wpss/vendor/firmware/** binary
 target/*/patches/china/vendor/firmware/** binary
 target/m52xq/patches/vendor/vendor/** binary
-target/r8q/patches/mainline-fix/** binary
 target/r8q/patches/vendor/*/** binary
 prebuilts/samsung/r0qxxx/system/priv-app/wallpaper-res/wallpaper-res.apk filter=lfs diff=lfs merge=lfs -text
