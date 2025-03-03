@@ -15,6 +15,8 @@
 *.png binary
 *.qmg binary
 *.webp binary
+# Prebuilt dependencies
+external/zipalign/zipalign binary
 # ROM-specific prebuilt blobs
 unica/flashable-zip/updater binary
 unica/mods/eureka/system/** binary
