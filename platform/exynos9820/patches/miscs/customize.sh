@@ -47,6 +47,13 @@ for e in $ENTRIES; do
     sed -i "/${e}/d" "$WORK_DIR/vendor/etc/fstab.exynos9820"
 done
 
+# Add /metadata
+echo "Adding /metadata in /vendor/etc/fstab.exynos9820"
+MISC="/dev/block/by-name/misc\t/misc\temmc\tdefaults\tdefaults,first_stage_mount"
+METADATA="/dev/block/platform/13d60000.ufs/by-name/metadata\t/metadata\text4\tnoatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic,sync\twait,first_stage_mount,formattable,check"
+
+sed -i "\|${MISC}|a ${METADATA}" "$WORK_DIR/vendor/etc/fstab.exynos9820"
+
 # For some reason we are missing 2 permissions here: android.hardware.security.model.compatible and android.software.controls
 # First one is related to encryption and second one to SmartThings Device Control
 echo "Patching vendor permissions"
