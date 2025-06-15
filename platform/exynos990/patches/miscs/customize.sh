@@ -43,6 +43,12 @@ FBE_V2="fscompress,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimiz
 sed -i "${LINE}s|resgid=5678|resgid=5678,inlinecrypt|g" "$WORK_DIR/vendor/etc/fstab.exynos990" \
     && sed -i "${LINE}s|$FBE_V1|$FBE_V2|g" "$WORK_DIR/vendor/etc/fstab.exynos990"
 
+SET_PROP "vendor" "ro.crypto.allow_encrypt_override" --delete
+SET_PROP "vendor" "ro.crypto.metadata_init_delete_all_keys.enabled" "true"
+SET_PROP "vendor" "ro.crypto.dm_default_key.options_format.version" "2"
+SET_PROP "vendor" "ro.crypto.volume.metadata.method" "dm-default-key"
+SET_PROP "vendor" "ro.crypto.volume.options" "::v2"
+
 # Samsung ODE
 ENTRIES="
 ODE
