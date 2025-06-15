@@ -56,7 +56,7 @@ done
 # Add /metadata
 echo "Adding /metadata in /vendor/etc/fstab.exynos9820"
 MISC="/dev/block/by-name/misc\t/misc\temmc\tdefaults\tdefaults,first_stage_mount"
-METADATA="/dev/block/by-name/by-name/metadata\t/metadata\text4\tnoatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic,sync\twait,first_stage_mount,formattable,check"
+METADATA="/dev/block/by-name/metadata\t/metadata\text4\tnoatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic,sync\twait,first_stage_mount,formattable,check"
 
 sed -i "\|${MISC}|a ${METADATA}" "$WORK_DIR/vendor/etc/fstab.exynos9820"
 
