@@ -55,6 +55,7 @@
 - Set default TCP Congestion Algorithm to BBRv2
 - Spoofed stock device model for user apps (thanks @Ocin4Ever/@salvogiangri)
 - Updated KernelSU Next Driver + Manager
+- Updated Note20 OdinPacks to G binary
 - Updated source firmware to S938BXXS4AYF1 (June SPL)
 - Countless other small optimizations for the best UX experience
 
