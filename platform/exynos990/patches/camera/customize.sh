@@ -58,12 +58,6 @@ HEX_PATCH "$WORK_DIR/system/system/lib64/libstagefright.so" "010140f9cf390594a05
 # Add prebuilt libs from other devices
 BLOBS_LIST="
 system/lib64/libc++_shared.so
-system/lib64/libtensorflowLite.camera.samsung.so
-system/lib64/libtensorflowlite_c.camera.samsung.so
-system/lib64/libtensorflowlite_inference_api.camera.samsung.so
-system/lib64/libtensorflowlite_jni_voicecommand.so
-system/lib64/libtensorflowLite2_11_0_dynamic_camera.so
-system/lib64/libsaiv_HprFace_cmh_support_jni.camera.samsung.so
 "
 for blob in $BLOBS_LIST
 do
