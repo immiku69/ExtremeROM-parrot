@@ -51,7 +51,8 @@ fi
 # Add libc++_shared.so dependency for __cxa_demangle symbol
 patchelf --add-needed "libc++_shared.so" "$WORK_DIR/system/system/lib64/libMultiFrameProcessing20Core.camera.samsung.so"
 
-# Patch libstagefright.so to remove HDR10+ check
+# Patch S25U libstagefright.so to remove HDR10+ check
+ADD_TO_WORK_DIR "pa3qxxx" "system" "system/lib64/libstagefright.so" 0 0 644 "u:object_r:system_lib_file:s0"
 HEX_PATCH "$WORK_DIR/system/system/lib64/libstagefright.so" "010140f9cf390594a0500034" "010140f91f2003d51f2003d5"
 
 # Add prebuilt libs from other devices
