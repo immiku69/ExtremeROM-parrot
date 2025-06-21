@@ -1,4 +1,5 @@
 BLOBS_LIST="
+system/lib64/libenn_wrapper_system.arcsoft.so
 system/lib64/libpic_best.arcsoft.so
 system/lib64/libarcsoft_dualcam_portraitlighting.so
 system/lib64/libdualcam_refocus_gallery_54.so
