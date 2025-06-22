@@ -9,4 +9,8 @@ if [[ -d "$SRC_DIR/target/$TARGET_CODENAME/overlay" ]]; then
 fi
 
 # TODO: Add a proper check if we need to remove this
-DELETE_FROM_WORK_DIR "product" "overlay/SystemUI__r12sxxx__auto_generated_rro_product.apk"
+DECODE_APK "/product/overlay/SystemUI__r12sxxx__auto_generated_rro_product.apk"
+sed -i -e "/config_enableDisplayCutoutProtection/d" -e "/config_enableRoundedCorner/d" "$APKTOOL_DIR/product/overlay/SystemUI__r12sxxx__auto_generated_rro_product.apk/res/values/bools.xml"
+rm "$APKTOOL_DIR/product/overlay/SystemUI__r12sxxx__auto_generated_rro_product.apk/res/values/dimens.xml"
+rm "$APKTOOL_DIR/product/overlay/SystemUI__r12sxxx__auto_generated_rro_product.apk/res/values/public.xml"
+rm "$APKTOOL_DIR/product/overlay/SystemUI__r12sxxx__auto_generated_rro_product.apk/res/drawable/rounded.xml"
