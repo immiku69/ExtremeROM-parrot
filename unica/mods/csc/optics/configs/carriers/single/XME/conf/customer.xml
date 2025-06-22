@@ -131,6 +131,8 @@
         <AlertOnCall>on</AlertOnCall>
         <DefLanguage>automatic</DefLanguage>
         <DefLanguageNoSIM>en_GB</DefLanguageNoSIM>
+        <T9Language>english</T9Language>
+        <CallNoiseReduction>on</CallNoiseReduction>
       </Phone>
       <CountryCert>
         <CertCountryName>MALAYSIA</CertCountryName>
@@ -178,16 +180,21 @@
         </MmsReceiving>
       </MMS>
     </Messages>
+    <GPS>
+      <GPSActivation>on</GPSActivation>
+    </GPS>
     <Browser>
       <NbBookmark>2</NbBookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>1</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>2</Index>
         <BookmarkName>Galaxy Shop</BookmarkName>
         <URL>https://www.samsung.com/my/mobile/?cid=my_ow_app_s-internet_none_none_bookmark_bookmark_202008_none</URL>
       </Bookmark>

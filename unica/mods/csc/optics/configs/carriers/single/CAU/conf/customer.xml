@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0002</CSCEdition>
+    <CSCEdition>ED0001</CSCEdition>
     <Country>Georgia</Country>
     <CountryISO>GE</CountryISO>
     <Region>CIS</Region>
@@ -88,7 +88,9 @@
         <DefLanguage>ru_RU</DefLanguage>
         <DefLanguageNoSIM>ru_RU</DefLanguageNoSIM>
         <T9Enabling>disable</T9Enabling>
+        <T9Language>russian</T9Language>
         <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
           <TimeFormat>24h</TimeFormat>
           <TimezoneUpdate>on</TimezoneUpdate>
         </DateTimeFormat>
@@ -124,16 +126,24 @@
           <Roaming>manual</Roaming>
         </MmsReceiving>
       </MMS>
+      <Email>
+        <EmailReceiving>
+          <AutoPoll>off</AutoPoll>
+          <KeepServer>on</KeepServer>
+        </EmailReceiving>
+      </Email>
     </Messages>
     <Browser>
       <NbBookmark>2</NbBookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>1</Index>
         <BookmarkName>Samsung</BookmarkName>
         <URL>http://www.samsung.com/</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>2</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>

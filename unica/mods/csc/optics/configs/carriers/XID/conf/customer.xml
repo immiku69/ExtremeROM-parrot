@@ -84,6 +84,7 @@
         <DefLanguage>indonesia</DefLanguage>
         <DefLanguageNoSIM>indonesia</DefLanguageNoSIM>
         <T9Enabling>disable</T9Enabling>
+        <T9Language>indonesia</T9Language>
       </Phone>
     </Main>
     <Messages>
@@ -94,6 +95,7 @@
           <ThresholdType>pagecount</ThresholdType>
         </MsgTypeThreshold>
         <CharSupport>automatic</CharSupport>
+        <SSMS>off</SSMS>
       </SMS>
       <MMS>
         <MmsSending>
@@ -105,31 +107,44 @@
         </MmsReceiving>
       </MMS>
     </Messages>
+    <Multimedia>
+      <Camera>
+        <Quality>high</Quality>
+      </Camera>
+      <Video>
+        <Quality>high</Quality>
+      </Video>
+    </Multimedia>
     <Browser>
       <NbBookmark>5</NbBookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>1</Index>
         <BookmarkName>Samsung Content</BookmarkName>
         <URL>http://content.samsung.com/mobile/id</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>5</Index>
         <BookmarkName>Galaxy Shop</BookmarkName>
         <URL>https://www.samsung.com/id/mobile/?cid=id_ow_app_s-internet_none_none_bookmark_bookmark_202008_none</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>2</Index>
         <BookmarkName>Google Mail</BookmarkName>
         <URL>http://mail.google.com</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>3</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>4</Index>
         <BookmarkName>Gameloft</BookmarkName>
         <URL>http://wapshop.gameloft.com/sfc_apac/?page=BOGOF&amp;adid=94415</URL>
       </Bookmark>
@@ -297,7 +312,7 @@
         <IpVersion>ipv4v6</IpVersion>
         <RoamingIpVersion>ipv4v6</RoamingIpVersion>
         <Editable>yes</Editable>
-        <HiddenStatus>show</HiddenStatus>
+        <HiddenStatus>hidden</HiddenStatus>
         <ProfileName>IMS</ProfileName>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
@@ -331,6 +346,10 @@
         <PSparam>
           <APN>internet</APN>
         </PSparam>
+        <CSparam>
+          <TelNum>8789</TelNum>
+          <CallType>isdn</CallType>
+        </CSparam>
       </Profile>
       <Profile>
         <NetworkName>Telkomsel</NetworkName>

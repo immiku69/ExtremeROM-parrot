@@ -1,7 +1,7 @@
 {
-    "modelName": "SM-S721B",
+    "modelName": "SM-S938B",
     "oemKey": "INS",
-    "version": "1008",
+    "version": "1004",
     "app": [
         {
             "appId": "com.sec.android.app.popupcalculator",
@@ -19,13 +19,8 @@
             "supportSubUser": "true"
         },
         {
-            "appId": "com.samsung.android.spay",
-            "appName": "Samsung Wallet",
-            "supportSubUser": "true"
-        },
-        {
             "appId": "com.samsung.android.app.watchmanager",
-            "appName": "Galaxy Wearable",
+            "appName": "Galaxy  Wearable",
             "supportSubUser": "true"
         },
         {
@@ -50,12 +45,17 @@
         },
         {
             "appId": "com.samsung.sree",
-            "appName": "Samsung Global Goals",
+            "appName": "Samsung  Global Goals",
+            "supportSubUser": "true"
+        },
+        {
+            "appId": "com.samsung.android.spay",
+            "appName": "Samsung  Wallet",
             "supportSubUser": "true"
         },
         {
             "appId": "com.samsung.android.app.spage",
-            "appName": "Samsung Free",
+            "appName": "Samsung  Free",
             "supportSubUser": "true"
         },
         {
@@ -65,7 +65,7 @@
         },
         {
             "appId": "com.samsung.android.voc",
-            "appName": "Samsung Members",
+            "appName": "Samsung  Members",
             "supportSubUser": "true"
         },
         {
@@ -104,6 +104,11 @@
             "supportSubUser": "true"
         },
         {
+            "appId": "com.samsung.SMT.lang_hi_in_f00",
+            "appName": "Samsung TTS Hindi Voice 1",
+            "supportSubUser": "true"
+        },
+        {
             "appId": "com.samsung.android.bixby.ondevice.enin",
             "appName": "Samsung on-device Resource English (India)",
             "supportSubUser": "true"
@@ -116,6 +121,11 @@
         {
             "appId": "com.samsung.android.nmt.apps.t2t.languagepack.enhi",
             "appName": "En-Hi Language Pack",
+            "supportSubUser": "true"
+        },
+        {
+            "appId": "com.sec.penup",
+            "appName": "PENUP",
             "supportSubUser": "true"
         },
         {

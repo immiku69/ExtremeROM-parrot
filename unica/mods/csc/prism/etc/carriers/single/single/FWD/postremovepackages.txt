@@ -1,3 +1,0 @@
-2
-AmazonMDIP-release-signed-sdk34-Samsung.apk
-SamsungPayStub.apk

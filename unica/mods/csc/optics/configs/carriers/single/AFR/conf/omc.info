@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <omcInfo>
   <contentType>0</contentType>
-  <version>SAOMC_SM-S721B_OXM_AFR_15_0009</version>
+  <version>SAOMC_SM-S938B_OXM_AFR_15_0006</version>
   <model>
-    <name>SM-S721B</name>
+    <name>SM-S938B</name>
   </model>
   <catalog>
     <customer>yes</customer>
-    <customerEdition>ED0005</customerEdition>
-    <carrierListVersion>150055</carrierListVersion>
+    <customerEdition>ED0002</customerEdition>
+    <carrierListVersion>150038</carrierListVersion>
     <cscfeature>yes</cscfeature>
     <carrierfeature>yes</carrierfeature>
     <cp>no</cp>
     <imsupdate>no</imsupdate>
   </catalog>
   <carrierList>
-    <carrierCount>28</carrierCount>
+    <carrierCount>23</carrierCount>
     <carrier>
       <mcc>630</mcc>
       <mnc>01</mnc>
@@ -55,16 +55,6 @@
       <mcc>634</mcc>
       <mnc>07</mnc>
       <networkName>Sudani Network</networkName>
-    </carrier>
-    <carrier>
-      <mcc>635</mcc>
-      <mnc>13</mnc>
-      <networkName>AIRTEL-RW</networkName>
-    </carrier>
-    <carrier>
-      <mcc>635</mcc>
-      <mnc>14</mnc>
-      <networkName>AIRTEL-RW</networkName>
     </carrier>
     <carrier>
       <mcc>635</mcc>
@@ -129,28 +119,13 @@
     </carrier>
     <carrier>
       <mcc>640</mcc>
-      <mnc>09</mnc>
-      <networkName>Halotel</networkName>
-    </carrier>
-    <carrier>
-      <mcc>640</mcc>
       <mnc>11</mnc>
       <networkName>Smile TZ</networkName>
     </carrier>
     <carrier>
       <mcc>641</mcc>
-      <mnc>01</mnc>
-      <networkName>Airtel Uganda</networkName>
-    </carrier>
-    <carrier>
-      <mcc>641</mcc>
       <mnc>10</mnc>
       <networkName>MTN Uganda</networkName>
-    </carrier>
-    <carrier>
-      <mcc>641</mcc>
-      <mnc>22</mnc>
-      <networkName>Airtel Uganda</networkName>
     </carrier>
     <carrier>
       <mcc>641</mcc>

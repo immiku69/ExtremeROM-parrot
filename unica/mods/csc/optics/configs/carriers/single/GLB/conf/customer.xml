@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0001</CSCEdition>
+    <CSCEdition>ED0003</CSCEdition>
     <Country>PHILIPPINES</Country>
     <CountryISO>PH</CountryISO>
     <Region>SEA</Region>
@@ -20,6 +20,11 @@
         <SeparateLock>none</SeparateLock>
       </Security>
       <Network>
+        <NbMaxPDP>1</NbMaxPDP>
+        <MaxPDP>
+          <NetworkName>Globe</NetworkName>
+          <MaxPDP2G>1</MaxPDP2G>
+        </MaxPDP>
         <NbSOSNumber>1</NbSOSNumber>
         <SOSNumber>911</SOSNumber>
         <NbSOSNumberNoSIM>1</NbSOSNumberNoSIM>
@@ -44,17 +49,15 @@
       <Phone>
         <DefLanguage>automatic</DefLanguage>
         <DefLanguageNoSIM>en_GB</DefLanguageNoSIM>
+        <T9Language>english</T9Language>
         <DateTimeFormat>
+          <DateFormat>mmddyyyy</DateFormat>
           <TimeFormat>12h</TimeFormat>
         </DateTimeFormat>
       </Phone>
       <Display>
-        <NbLockScreenBG>1</NbLockScreenBG>
-        <LockScreenBG src="/Customer/GLB/LockScreenImage/lockscreen_default_wallpaper.png" width="1080" height="2400" default="true">
-          <FileType>PNG</FileType>
-        </LockScreenBG>
         <NbWallpaper>1</NbWallpaper>
-        <Wallpaper src="/Customer/GLB/Wallpaper/default_wallpaper.png" width="1080" height="2400" usedWithLockScreen="true" default="true">
+        <Wallpaper src="/Customer/GLB/Wallpaper/default_wallpaper.png" width="3200" height="3200" default="true">
           <Position>1</Position>
           <FileType>PNG</FileType>
         </Wallpaper>
@@ -68,7 +71,6 @@
           <ThresholdType>pagecount</ThresholdType>
         </MsgTypeThreshold>
         <MaxRecipient>20</MaxRecipient>
-        <CellBroadcast>on</CellBroadcast>
       </SMS>
       <MMS>
         <MmsSending>
@@ -81,29 +83,39 @@
           <Roaming>manual</Roaming>
         </MmsReceiving>
       </MMS>
+      <Email>
+        <EmailReceiving>
+          <AutoPoll>off</AutoPoll>
+          <KeepServer>on</KeepServer>
+        </EmailReceiving>
+      </Email>
     </Messages>
     <Browser>
       <NbBookmark>4</NbBookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>1</Index>
         <BookmarkName>Homepage</BookmarkName>
         <URL>http://www.globe.com.ph</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>2</Index>
         <BookmarkName>Facebook</BookmarkName>
         <URL>https://m.facebook.com</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>3</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>4</Index>
         <BookmarkName>Galaxy Shop</BookmarkName>
         <URL>https://www.samsung.com/ph/mobile/?cid=ph_ow_app_s-internet_none_none_bookmark_bookmark_202008_none</URL>
       </Bookmark>

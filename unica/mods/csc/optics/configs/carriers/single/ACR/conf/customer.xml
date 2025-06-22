@@ -112,6 +112,7 @@
         <DefLanguage>en_GB</DefLanguage>
         <DefLanguageNoSIM>en_GB</DefLanguageNoSIM>
         <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
           <TimeFormat>24h</TimeFormat>
           <TimezoneUpdate>on</TimezoneUpdate>
         </DateTimeFormat>
@@ -122,48 +123,56 @@
       <Bookmark>
         <NetworkName>AIRTEL</NetworkName>
         <Editable>yes</Editable>
+        <Index>3</Index>
         <BookmarkName>AIRTEL</BookmarkName>
         <URL>https://www.airteltigo.com.gh/</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>4</Index>
         <BookmarkName>GLO</BookmarkName>
         <URL>https://www.gloworld.com/gh/</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>5</Index>
         <BookmarkName>MTN CAMEROON</BookmarkName>
         <URL>https://mtn.cm/</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>6</Index>
         <BookmarkName>ORANGE</BookmarkName>
         <URL>https://www.orange.cm/</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>7</Index>
         <BookmarkName>Oweb</BookmarkName>
         <URL>https://www.orange.ci/</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>8</Index>
         <BookmarkName>MTN</BookmarkName>
         <URL>https://www.mtn.ci/</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>MOOV</NetworkName>
         <Editable>yes</Editable>
+        <Index>9</Index>
         <BookmarkName>Moov3G</BookmarkName>
         <URL>https://www.moov.com/</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>10</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>https://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0003</CSCEdition>
+    <CSCEdition>ED0001</CSCEdition>
     <Country>Libya</Country>
     <CountryISO>LY</CountryISO>
     <Region>MEA</Region>
     <SalesCode>LYS</SalesCode>
-    <NbNetworkInfo>3</NbNetworkInfo>
+    <NbNetworkInfo>2</NbNetworkInfo>
     <NetworkInfo>
       <MCCMNC>60601</MCCMNC>
       <NetworkName>Almadar</NetworkName>
@@ -16,11 +16,6 @@
       <MCCMNC>60600</MCCMNC>
       <NetworkName>Libyana</NetworkName>
       <NWID>NW00663</NWID>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>60603</MCCMNC>
-      <NetworkName>LTT Libya</NetworkName>
-      <NWID>NW02373</NWID>
     </NetworkInfo>
   </GeneralInfo>
   <Settings>
@@ -43,6 +38,7 @@
       <Phone>
         <DefLanguage>en_GB</DefLanguage>
         <DefLanguageNoSIM>en_GB</DefLanguageNoSIM>
+        <T9Language>english</T9Language>
       </Phone>
     </Main>
     <Calendar>
@@ -52,12 +48,14 @@
       <NbBookmark>2</NbBookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>1</Index>
         <BookmarkName>Samsung Apps Web</BookmarkName>
         <URL>http://www.samsungapps.com</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>2</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>
@@ -66,7 +64,7 @@
       </eManual>
     </Browser>
     <Connections>
-      <NbProfileHandle>3</NbProfileHandle>
+      <NbProfileHandle>2</NbProfileHandle>
       <ProfileHandle>
         <NbNetProfile>4</NbNetProfile>
         <NetworkName>Libyana</NetworkName>
@@ -79,24 +77,15 @@
         <ProfXCAP>web</ProfXCAP>
       </ProfileHandle>
       <ProfileHandle>
-        <NbNetProfile>4</NbNetProfile>
+        <NbNetProfile>2</NbNetProfile>
         <NetworkName>Almadar</NetworkName>
         <ProfBrowser>almadar internet</ProfBrowser>
         <ProfMMS>almadar MMS</ProfMMS>
         <ProfEmail>almadar internet</ProfEmail>
         <ProfSyncDS>almadar internet</ProfSyncDS>
         <ProfActiveSync>almadar internet</ProfActiveSync>
-        <ProfIMS>IMS</ProfIMS>
-        <ProfXCAP>HOS</ProfXCAP>
       </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>3</NbNetProfile>
-        <NetworkName>LTT Libya</NetworkName>
-        <ProfBrowser>LTT4G</ProfBrowser>
-        <ProfIMS>IMS</ProfIMS>
-        <ProfXCAP>xcap</ProfXCAP>
-      </ProfileHandle>
-      <NbProfile>11</NbProfile>
+      <NbProfile>6</NbProfile>
       <Profile>
         <NetworkName>Libyana</NetworkName>
         <ProfileName>libyanaweb</ProfileName>
@@ -160,54 +149,6 @@
         </Proxy>
         <PSparam>
           <APN>almadar.mms</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Almadar</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <ProfileName>IMS</ProfileName>
-        <Auth>none</Auth>
-        <PSparam>
-          <APN>ims</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Almadar</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <ProfileName>HOS</ProfileName>
-        <Auth>none</Auth>
-        <Bearer>ps</Bearer>
-        <Protocol>http</Protocol>
-        <PSparam>
-          <APN>hos</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>LTT Libya</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <RoamingIpVersion>ipv4v6</RoamingIpVersion>
-        <ProfileName>LTT4G</ProfileName>
-        <PSparam>
-          <APN>ltt4g</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>LTT Libya</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <Editable>no</Editable>
-        <HiddenStatus>hidden</HiddenStatus>
-        <ProfileName>IMS</ProfileName>
-        <PSparam>
-          <APN>lttims</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>LTT Libya</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <HiddenStatus>hidden</HiddenStatus>
-        <ProfileName>xcap</ProfileName>
-        <PSparam>
-          <APN>xcap</APN>
         </PSparam>
       </Profile>
     </Connections>

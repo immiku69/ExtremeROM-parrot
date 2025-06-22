@@ -65,7 +65,9 @@
       <Phone>
         <DefLanguage>fr_FR</DefLanguage>
         <DefLanguageNoSIM>fr_FR</DefLanguageNoSIM>
+        <T9Language>french</T9Language>
         <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
           <TimeFormat>24h</TimeFormat>
         </DateTimeFormat>
       </Phone>
@@ -94,11 +96,13 @@
       <NbBookmark>8</NbBookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>1</Index>
         <BookmarkName>Samsung Apps Web</BookmarkName>
         <URL>http://www.samsungapps.com</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>2</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>

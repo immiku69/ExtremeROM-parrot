@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0002</CSCEdition>
+    <CSCEdition>ED0003</CSCEdition>
     <Country>SINGAPORE</Country>
     <CountryISO>SG</CountryISO>
     <Region>SEA</Region>
@@ -80,6 +80,23 @@
         <SeparateLock>none</SeparateLock>
       </Security>
       <Network>
+        <NbMaxPDP>4</NbMaxPDP>
+        <MaxPDP>
+          <NetworkName>Singtel (Postpaid)</NetworkName>
+          <MaxPDP2G>13</MaxPDP2G>
+        </MaxPDP>
+        <MaxPDP>
+          <NetworkName>Singtel (Prepaid)</NetworkName>
+          <MaxPDP2G>13</MaxPDP2G>
+        </MaxPDP>
+        <MaxPDP>
+          <NetworkName>PROGRESIF</NetworkName>
+          <MaxPDP2G>13</MaxPDP2G>
+        </MaxPDP>
+        <MaxPDP>
+          <NetworkName>DSTCom</NetworkName>
+          <MaxPDP2G>13</MaxPDP2G>
+        </MaxPDP>
         <NbFastDormancy>4</NbFastDormancy>
         <FastDormancy>
           <NetworkName>Singtel (Postpaid)</NetworkName>
@@ -127,6 +144,7 @@
         <AlertOnCall>on</AlertOnCall>
         <DefLanguage>en_GB</DefLanguage>
         <DefLanguageNoSIM>en_GB</DefLanguageNoSIM>
+        <CallNoiseReduction>on</CallNoiseReduction>
       </Phone>
     </Main>
     <Contact>
@@ -141,6 +159,7 @@
           <ThresholdType>pagecount</ThresholdType>
         </MsgTypeThreshold>
         <CharSupport>automatic</CharSupport>
+        <SSMS>off</SSMS>
         <PreviewMessage>on</PreviewMessage>
       </SMS>
       <MMS>
@@ -158,36 +177,42 @@
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>1</Index>
         <BookmarkName>M1</BookmarkName>
         <URL>https://www.m1.com.sg</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>2</Index>
         <BookmarkName>Connecting Tones</BookmarkName>
         <URL>http://connectingtones.m1.com.sg</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>3</Index>
         <BookmarkName>Facebook</BookmarkName>
         <URL>http://www.facebook.com</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>4</Index>
         <BookmarkName>ChannelNewsAsia</BookmarkName>
         <URL>http://www.channelnewsasia.com</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>5</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>6</Index>
         <BookmarkName>Galaxy Shop</BookmarkName>
         <URL>https://www.samsung.com/sg/mobile/?cid=sg_ow_app_s-internet_none_none_bookmark_bookmark_202008_none</URL>
       </Bookmark>

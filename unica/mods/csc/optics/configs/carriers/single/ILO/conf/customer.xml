@@ -118,7 +118,9 @@
         <DefLanguage>en_GB</DefLanguage>
         <DefLanguageNoSIM>en_GB</DefLanguageNoSIM>
         <T9Enabling>disable</T9Enabling>
+        <T9Language>english</T9Language>
         <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
           <TimeFormat>24h</TimeFormat>
           <TimezoneUpdate>on</TimezoneUpdate>
         </DateTimeFormat>
@@ -158,6 +160,9 @@
         <FlashSetting>auto</FlashSetting>
       </Camera>
     </Multimedia>
+    <GPS>
+      <GPSActivation>on</GPSActivation>
+    </GPS>
     <ActiveSync>
       <SyncSchedule>
         <PeakDuration>push</PeakDuration>

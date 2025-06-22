@@ -61,6 +61,10 @@
       <Phone>
         <DefLanguage>en_GB</DefLanguage>
         <DefLanguageNoSIM>en_GB</DefLanguageNoSIM>
+        <T9Language>english</T9Language>
+        <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
+        </DateTimeFormat>
       </Phone>
     </Main>
     <Calendar>
@@ -93,12 +97,14 @@
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>no</Editable>
+        <Index>1</Index>
         <BookmarkName>Samsung Apps Web</BookmarkName>
         <URL>http://www.samsungapps.com</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>2</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>

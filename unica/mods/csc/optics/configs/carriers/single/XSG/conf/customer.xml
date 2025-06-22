@@ -167,6 +167,10 @@
       <Phone>
         <DefLanguage>en_GB</DefLanguage>
         <DefLanguageNoSIM>en_GB</DefLanguageNoSIM>
+        <T9Language>english</T9Language>
+        <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
+        </DateTimeFormat>
       </Phone>
       <CountryCert>
         <CertDisplayStatys>on</CertDisplayStatys>
@@ -178,7 +182,7 @@
         </DetailDesc>
         <DetailDesc>
           <CertTag>TA</CertTag>
-          <CertValue>ER34603/24</CertValue>
+          <CertValue>ER38816/24</CertValue>
         </DetailDesc>
       </CountryCert>
     </Main>
@@ -207,11 +211,13 @@
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>1</Index>
         <BookmarkName>Galaxy Shop</BookmarkName>
         <URL>https://www.samsung.com/mobile/?cid=global_ow_app_s-internet_none_none_bookmark_bookmark_202008_none</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
+        <Index>2</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>

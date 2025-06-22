@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0002</CSCEdition>
+    <CSCEdition>ED0001</CSCEdition>
     <Country>TUNISIA</Country>
     <CountryISO>TN</CountryISO>
     <Region>MEA</Region>
@@ -56,6 +56,7 @@
       <Phone>
         <DefLanguage>fr_FR</DefLanguage>
         <DefLanguageNoSIM>fr_FR</DefLanguageNoSIM>
+        <T9Language>french</T9Language>
       </Phone>
     </Main>
     <Calendar>
@@ -66,12 +67,14 @@
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>no</Editable>
+        <Index>1</Index>
         <BookmarkName>Samsung Apps Web</BookmarkName>
         <URL>http://www.samsungapps.com</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>2</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>
@@ -149,6 +152,10 @@
         <PSparam>
           <APN>mms.ooredoo.tn</APN>
         </PSparam>
+        <CSparam>
+          <UserId>mms</UserId>
+          <Password>mms</Password>
+        </CSparam>
       </Profile>
       <Profile>
         <NetworkName>Ooredoo TN</NetworkName>

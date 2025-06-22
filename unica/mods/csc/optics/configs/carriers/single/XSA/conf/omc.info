@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <omcInfo>
   <contentType>0</contentType>
-  <version>SAOMC_SM-S721B_OXM_XSA_15_0004</version>
+  <version>SAOMC_SM-S938B_OXM_XSA_15_0009</version>
   <model>
-    <name>SM-S721B</name>
+    <name>SM-S938B</name>
   </model>
   <catalog>
     <customer>yes</customer>
-    <customerEdition>ED0003</customerEdition>
-    <carrierListVersion>150055</carrierListVersion>
+    <customerEdition>ED0001</customerEdition>
+    <carrierListVersion>150057</carrierListVersion>
     <cscfeature>yes</cscfeature>
     <carrierfeature>yes</carrierfeature>
     <cp>no</cp>
@@ -35,12 +35,12 @@
     <carrier>
       <mcc>505</mcc>
       <mnc>03</mnc>
-      <networkName>Vodafone AU</networkName>
+      <networkName>vodafone AU</networkName>
     </carrier>
     <carrier>
       <mcc>505</mcc>
       <mnc>06</mnc>
-      <networkName>Vodafone AU</networkName>
+      <networkName>vodafone AU</networkName>
     </carrier>
     <carrier>
       <mcc>505</mcc>

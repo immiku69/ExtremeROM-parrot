@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <omcInfo>
   <contentType>0</contentType>
-  <version>SAOMC_SM-S721B_OXM_XFA_15_0009</version>
+  <version>SAOMC_SM-S938B_OXM_XFA_15_0011</version>
   <model>
-    <name>SM-S721B</name>
+    <name>SM-S938B</name>
   </model>
   <catalog>
     <customer>yes</customer>
-    <customerEdition>ED0004</customerEdition>
-    <carrierListVersion>150055</carrierListVersion>
+    <customerEdition>ED0002</customerEdition>
+    <carrierListVersion>150038</carrierListVersion>
     <cscfeature>yes</cscfeature>
     <carrierfeature>yes</carrierfeature>
     <cp>no</cp>
     <imsupdate>no</imsupdate>
   </catalog>
   <carrierList>
-    <carrierCount>48</carrierCount>
+    <carrierCount>47</carrierCount>
     <carrier>
       <mcc>617</mcc>
       <mnc>01</mnc>
@@ -30,11 +30,6 @@
       <mcc>631</mcc>
       <mnc>02</mnc>
       <networkName>Unitel</networkName>
-    </carrier>
-    <carrier>
-      <mcc>640</mcc>
-      <mnc>84</mnc>
-      <networkName>Econet Wireless Zimbabwe</networkName>
     </carrier>
     <carrier>
       <mcc>643</mcc>

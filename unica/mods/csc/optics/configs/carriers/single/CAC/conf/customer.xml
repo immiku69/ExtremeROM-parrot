@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0003</CSCEdition>
+    <CSCEdition>ED0002</CSCEdition>
     <Country>Central Asia</Country>
     <CountryISO>KG</CountryISO>
     <Region>CIS</Region>
     <SalesCode>CAC</SalesCode>
-    <NbNetworkInfo>21</NbNetworkInfo>
+    <NbNetworkInfo>20</NbNetworkInfo>
     <NetworkInfo>
       <MCCMNC>43405</MCCMNC>
       <NetworkName>UCELL</NetworkName>
@@ -77,12 +77,6 @@
       <MCCMNC>43602</MCCMNC>
       <NetworkName>Tcell</NetworkName>
       <NWID>NW01211</NWID>
-      <SkipCscSelection>true</SkipCscSelection>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>43615</MCCMNC>
-      <NetworkName>Omobile</NetworkName>
-      <NWID>NW02393</NWID>
       <SkipCscSelection>true</SkipCscSelection>
     </NetworkInfo>
     <NetworkInfo>
@@ -183,6 +177,7 @@
         <DefLanguageNoSIM>ru_RU</DefLanguageNoSIM>
         <T9Enabling>disable</T9Enabling>
         <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
           <TimeFormat>24h</TimeFormat>
         </DateTimeFormat>
         <WeekendSetting>satsun</WeekendSetting>
@@ -208,6 +203,11 @@
           <Roaming>manual</Roaming>
         </MmsReceiving>
       </MMS>
+      <Email>
+        <EmailReceiving>
+          <KeepServer>on</KeepServer>
+        </EmailReceiving>
+      </Email>
     </Messages>
     <Browser>
       <NbBookmark>1</NbBookmark>
@@ -221,7 +221,7 @@
       </eManual>
     </Browser>
     <Connections>
-      <NbProfileHandle>20</NbProfileHandle>
+      <NbProfileHandle>19</NbProfileHandle>
       <ProfileHandle>
         <NbNetProfile>3</NbNetProfile>
         <NetworkName>UCELL</NetworkName>
@@ -359,12 +359,7 @@
         <ProfIMS>ONDO IMS</ProfIMS>
         <ProfXCAP>ONDO XCAP</ProfXCAP>
       </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>1</NbNetProfile>
-        <NetworkName>Omobile</NetworkName>
-        <ProfBrowser>Omobile Internet</ProfBrowser>
-      </ProfileHandle>
-      <NbProfile>51</NbProfile>
+      <NbProfile>50</NbProfile>
       <Profile>
         <NetworkName>UCELL</NetworkName>
         <IpVersion>ipv4v6</IpVersion>
@@ -634,15 +629,6 @@
           <APN>mms</APN>
           <UserId>mms</UserId>
           <Password>mms</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Omobile</NetworkName>
-        <ProfileName>Omobile Internet</ProfileName>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <PSparam>
-          <APN>Omobile</APN>
         </PSparam>
       </Profile>
       <Profile>

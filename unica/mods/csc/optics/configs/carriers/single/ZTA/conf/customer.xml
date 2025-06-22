@@ -42,6 +42,7 @@
         <DefLanguage>portuguese_latin</DefLanguage>
         <DefLanguageNoSIM>portuguese_latin</DefLanguageNoSIM>
         <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
           <TimeFormat>24h</TimeFormat>
         </DateTimeFormat>
       </Phone>

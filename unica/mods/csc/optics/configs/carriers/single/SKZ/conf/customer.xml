@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0004</CSCEdition>
+    <CSCEdition>ED0002</CSCEdition>
     <Country>Kazakhstan</Country>
     <CountryISO>KZ</CountryISO>
     <Region>CIS</Region>
     <SalesCode>SKZ</SalesCode>
-    <NbNetworkInfo>25</NbNetworkInfo>
+    <NbNetworkInfo>24</NbNetworkInfo>
     <NetworkInfo>
       <MCCMNC>40101</MCCMNC>
       <NetworkName>Beeline</NetworkName>
@@ -85,12 +85,6 @@
       <MCCMNC>43602</MCCMNC>
       <NetworkName>Tcell</NetworkName>
       <NWID>NW01211</NWID>
-      <SkipCscSelection>true</SkipCscSelection>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>43615</MCCMNC>
-      <NetworkName>Omobile</NetworkName>
-      <NWID>NW02393</NWID>
       <SkipCscSelection>true</SkipCscSelection>
     </NetworkInfo>
     <NetworkInfo>
@@ -218,6 +212,7 @@
         <DefLanguage>kk_KZ</DefLanguage>
         <DefLanguageNoSIM>kk_KZ</DefLanguageNoSIM>
         <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
           <TimeFormat>24h</TimeFormat>
         </DateTimeFormat>
         <WeekendSetting>satsun</WeekendSetting>
@@ -243,6 +238,11 @@
           <Roaming>manual</Roaming>
         </MmsReceiving>
       </MMS>
+      <Email>
+        <EmailReceiving>
+          <KeepServer>on</KeepServer>
+        </EmailReceiving>
+      </Email>
     </Messages>
     <Browser>
       <NbBookmark>1</NbBookmark>
@@ -256,7 +256,7 @@
       </eManual>
     </Browser>
     <Connections>
-      <NbProfileHandle>24</NbProfileHandle>
+      <NbProfileHandle>23</NbProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
         <NetworkName>ALTEL</NetworkName>
@@ -422,16 +422,9 @@
         <ProfIMS>ONDO IMS</ProfIMS>
         <ProfXCAP>ONDO XCAP</ProfXCAP>
       </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>1</NbNetProfile>
-        <NetworkName>Omobile</NetworkName>
-        <ProfBrowser>Omobile Internet</ProfBrowser>
-      </ProfileHandle>
-      <NbProfile>59</NbProfile>
+      <NbProfile>58</NbProfile>
       <Profile>
         <NetworkName>ALTEL</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <RoamingIpVersion>ipv4v6</RoamingIpVersion>
         <ProfileName>ALTEL</ProfileName>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
@@ -441,8 +434,6 @@
       </Profile>
       <Profile>
         <NetworkName>ALTEL</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <RoamingIpVersion>ipv4v6</RoamingIpVersion>
         <ProfileName>ALTEL IMS</ProfileName>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
@@ -488,8 +479,6 @@
       </Profile>
       <Profile>
         <NetworkName>Tele2</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <RoamingIpVersion>ipv4v6</RoamingIpVersion>
         <ProfileName>Tele2 Internet</ProfileName>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
@@ -499,8 +488,6 @@
       </Profile>
       <Profile>
         <NetworkName>Tele2</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <RoamingIpVersion>ipv4v6</RoamingIpVersion>
         <ProfileName>Tele2 IMS</ProfileName>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
@@ -780,15 +767,6 @@
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>Omobile</NetworkName>
-        <ProfileName>Omobile Internet</ProfileName>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <PSparam>
-          <APN>Omobile</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
         <NetworkName>Beeline TJ</NetworkName>
         <ProfileName>Beeline Internet</ProfileName>
         <Auth>normal</Auth>
@@ -888,8 +866,6 @@
       </Profile>
       <Profile>
         <NetworkName>Unitel</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <RoamingIpVersion>ipv4v6</RoamingIpVersion>
         <ProfileName>Unitel Internet</ProfileName>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>

@@ -41,10 +41,6 @@
           <NetworkName>Vodafone AU</NetworkName>
           <WbAmrCodec>on</WbAmrCodec>
         </WbAmr>
-        <NbSOSNumber>1</NbSOSNumber>
-        <SOSNumber>000, 112</SOSNumber>
-        <NbSOSNumberNoSIM>1</NbSOSNumberNoSIM>
-        <SOSNumberNoSIM>000, 112, 911, 999, 08, 110, 118, 119</SOSNumberNoSIM>
         <AutoProfile>on</AutoProfile>
         <AutoVoicemail>on</AutoVoicemail>
         <AutoEmailAccount>off</AutoEmailAccount>
@@ -67,7 +63,9 @@
         <DefLanguage>en_AU</DefLanguage>
         <DefLanguageNoSIM>en_AU</DefLanguageNoSIM>
         <ContinuousInput>enable</ContinuousInput>
+        <T9Language>english</T9Language>
         <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
           <TimeFormat>12h</TimeFormat>
           <TimezoneUpdate>on</TimezoneUpdate>
         </DateTimeFormat>
@@ -326,6 +324,9 @@
         </Account>
       </Email>
     </Messages>
+    <Wifi>
+      <WifiEnableStatus>on</WifiEnableStatus>
+    </Wifi>
     <Multimedia>
       <Camera>
         <ShutterSound>off</ShutterSound>

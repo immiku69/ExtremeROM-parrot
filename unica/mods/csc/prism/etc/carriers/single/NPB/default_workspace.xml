@@ -16,17 +16,39 @@ limitations under the License.
 -->
 
 <favorites xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
-	<homeGridInfo default="4x6" />
+    <homeGridInfo default="4x6" /> 
+
     <home>
         <!-- appwidget : Weather -->
         <appwidget 
             screen="0" 
-            packageName="com.sec.android.daemonapp" 
-            className="com.sec.android.daemonapp.appwidget.WeatherAppWidget2x1" 
-            x="1" 
+            packageName="com.sec.android.daemonapp"
+			className="com.sec.android.daemonapp.appwidget.WeatherForecastWidget" 
+            x="0"
             y="2" 
             spanX="2" 
             spanY="2" />
+
+        <!--appwidget:Smart  suggestions-->
+        <appwidget
+            screen="0"
+            packageName="com.samsung.android.smartsuggestions"
+            className="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.appwidget.AiSuggestionAppWidgetReceiver"
+            x="2"
+            y="2"
+            spanX="2"
+            spanY="1" />
+
+        <!--appwidget:Samsung  Health-->
+        <appwidget
+            screen="0"
+            packageName="com.sec.android.app.shealth"
+            className="com.samsung.android.app.shealth.tracker.dailyactivity.widget.DaWidgetReceiver"
+            x="2"
+            y="3"
+            spanX="2"
+            spanY="1" />
+
 
         <!-- appwidget : Google -->
         <appwidget 
@@ -62,101 +84,92 @@ limitations under the License.
             x="2" 
             y="5" />
 
-        <!-- Folder : Google -->
+        <!-- folder : Google -->
         <folder
-            screen="0" 
-            title="Google" 
+			screen="0"
+			postPosition="true"
+			title="Google" 
             x="3" 
-            y="5" >
+            y="5">
             <!-- Google -->
-            <favorite
+            <favorite 
                 screen="0" 
                 packageName="com.google.android.googlequicksearchbox" 
                 className="com.google.android.googlequicksearchbox.SearchActivity" />
-                <!-- Chrome -->
-            <favorite
+            <!-- Chrome -->
+            <favorite 
                 screen="1" 
                 packageName="com.android.chrome" 
                 className="com.google.android.apps.chrome.Main" />
-                <!-- Gmail -->
-            <favorite
+            <!-- Gmail -->
+            <favorite 
                 screen="2" 
                 packageName="com.google.android.gm" 
                 className="com.google.android.gm.ConversationListActivityGmail" />
-                <!-- Maps -->
-            <favorite
+            <!-- Maps -->
+            <favorite 
                 screen="3" 
                 packageName="com.google.android.apps.maps" 
                 className="com.google.android.maps.MapsActivity" />
-                <!-- Youtube -->
-            <favorite
+            <!-- YouTube -->
+            <favorite 
                 screen="4" 
                 packageName="com.google.android.youtube" 
                 className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity" />
-                <!-- Drive -->
-            <favorite
+            <!-- Drive -->
+            <favorite 
                 screen="5" 
                 packageName="com.google.android.apps.docs" 
                 className="com.google.android.apps.docs.app.NewMainProxyActivity" />
-            <!-- YT Music -->
-            <favorite
+            <!-- YouTube Music -->
+            <favorite 
                 screen="6" 
                 packageName="com.google.android.apps.youtube.music" 
                 className="com.google.android.apps.youtube.music.activities.MusicActivity" />
-            <!-- Google Play Movies & TV -->
+            <!--Google  TV-->
             <favorite 
                 screen="7" 
                 packageName="com.google.android.videos" 
                 className="com.google.android.videos.GoogleTvEntryPoint" />
-                <!-- Duo -->
-            <favorite
+            <!--Meet-->
+            <favorite 
                 screen="8" 
                 packageName="com.google.android.apps.tachyon" 
                 className="com.google.android.apps.tachyon.MainActivity" />
-                <!-- Photos -->
-            <favorite
+            <!-- Photos -->
+            <favorite 
                 screen="9" 
                 packageName="com.google.android.apps.photos" 
                 className="com.google.android.apps.photos.home.HomeActivity" />
-            <!-- Android Messages -->
-            <favorite 
-                screen="10" 
-                packageName="com.google.android.apps.messaging" 
-                className="com.google.android.apps.messaging.ui.ConversationListActivity" />
-				
-			<!-- Gemini -->
+            <!-- Gemini -->
             <favorite
-                screen="11"
-				packageName="com.google.android.apps.bard"
+                screen="10"
+                packageName="com.google.android.apps.bard"
                 className="com.google.android.apps.bard.shellapp.BardEntryPointActivity" />
-				
-        </folder> 
+        </folder>
 
-         <!-- +1 page -->
-		
         <!-- Clock -->
-        <favorite
-            screen="1"
-            packageName="com.sec.android.app.clockpackage"
+        <favorite 
+            screen="1" 
+            packageName="com.sec.android.app.clockpackage" 
             className="com.sec.android.app.clockpackage.ClockPackage" 
-			x="0"
+            x="0" 
             y="5" />
-			
+
         <!-- Samsung Free -->
         <favorite 
             screen="1" 
-            packageName="com.samsung.android.app.spage"
-            className="com.samsung.android.app.spage.main.LauncherActivity"
-            x="1"
-            y="5"/>
+            packageName="com.samsung.android.app.spage" 
+            className="com.samsung.android.app.spage.main.LauncherActivity" 
+            x="1" 
+            y="5" />
 
-
-        <!-- Game Launcher -->
-        <favorite
-            screen="1"
-            packageName="com.samsung.android.game.gamehome"
-            className="com.samsung.android.game.gamehome.activity.StartActivity"
-            x="2"
+        <!--Gaming  Hub-->
+        <favorite 
+            screen="1" 
+            packageName="com.samsung.android.game.gamehome" 
+            className="com.samsung.android.game.gamehome.app.MainActivity"
+            x="2" 
             y="5" />
 
         <!-- folder : Microsoft -->
@@ -165,7 +178,7 @@ limitations under the License.
             title="Microsoft" 
             x="3" 
             y="5">
-            <!-- Office Mobile -->
+            <!--Microsoft  365  (Office)-->
             <favorite 
                 screen="0" 
                 packageName="com.microsoft.office.officehubrow" 
@@ -179,7 +192,7 @@ limitations under the License.
             <favorite 
                 screen="2" 
                 packageName="com.linkedin.android" 
-                className="com.linkedin.android.authenticator.LaunchActivity" />
+                className="com.linkedin.android.authenticator.LaunchActivityDefault" />
             <!-- Outlook -->
             <favorite 
                 screen="3" 
@@ -190,6 +203,7 @@ limitations under the License.
     </home>
 
 
+
     <hotseat>
         <!-- Phone -->
         <favorite 
@@ -197,11 +211,11 @@ limitations under the License.
             packageName="com.samsung.android.dialer" 
             className="com.samsung.android.dialer.DialtactsActivity" />
 
-        <!-- Messages -->
+        <!-- Android Message -->
         <favorite 
             screen="1" 
-            packageName="com.samsung.android.messaging" 
-            className="com.android.mms.ui.ConversationComposer" />
+            packageName="com.google.android.apps.messaging" 
+            className="com.google.android.apps.messaging.ui.ConversationListActivity" />
 
         <!-- Samsung Internet -->
         <favorite 
@@ -218,4 +232,3 @@ limitations under the License.
     </hotseat>
 
 </favorites>
-

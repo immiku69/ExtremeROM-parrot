@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0002</CSCEdition>
+    <CSCEdition>ED0001</CSCEdition>
     <Country>South Africa</Country>
     <CountryISO>ZA</CountryISO>
     <Region>MEA</Region>
@@ -137,6 +137,7 @@
         <DefLanguageNoSIM>en_ZA</DefLanguageNoSIM>
         <T9Enabling>enable</T9Enabling>
         <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
           <TimeFormat>24h</TimeFormat>
         </DateTimeFormat>
       </Phone>
@@ -201,48 +202,56 @@
       <Bookmark>
         <NetworkName>Vodacom</NetworkName>
         <Editable>no</Editable>
+        <Index>1</Index>
         <BookmarkName>Music</BookmarkName>
         <URL>https://live.vodacom.co.za/za/vlive-za_page_music</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>Vodacom</NetworkName>
         <Editable>no</Editable>
+        <Index>11</Index>
         <BookmarkName>Games</BookmarkName>
         <URL>https://live.vodacom.co.za/za/vlive-za_page_games</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>Vodacom</NetworkName>
         <Editable>yes</Editable>
+        <Index>12</Index>
         <BookmarkName>Vodacom</BookmarkName>
         <URL>http://vodacom.mobi</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>Vodacom</NetworkName>
         <Editable>yes</Editable>
+        <Index>15</Index>
         <BookmarkName>Video</BookmarkName>
         <URL>https://live.vodacom.co.za/za/vlive-za_page_video</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>Vodacom</NetworkName>
         <Editable>yes</Editable>
+        <Index>21</Index>
         <BookmarkName>Chat</BookmarkName>
         <URL>https://live.vodacom.co.za/za/vlive-za_page_chat</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>Vodacom</NetworkName>
         <Editable>yes</Editable>
+        <Index>22</Index>
         <BookmarkName>Kids</BookmarkName>
         <URL>https://live.vodacom.co.za/za/za/page/kids</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>8</Index>
         <BookmarkName>Google</BookmarkName>
         <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>25</Index>
         <BookmarkName>Galaxy Shop</BookmarkName>
         <URL>https://www.samsung.com/za/mobile/?cid=za_ow_app_s-internet_none_none_bookmark_bookmark_202008_none</URL>
       </Bookmark>

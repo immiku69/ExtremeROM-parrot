@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0003</CSCEdition>
+    <CSCEdition>ED0001</CSCEdition>
     <Country>Australia</Country>
     <CountryISO>AU</CountryISO>
     <Region>SEA</Region>
@@ -19,12 +19,12 @@
     </NetworkInfo>
     <NetworkInfo>
       <MCCMNC>50503</MCCMNC>
-      <NetworkName>Vodafone AU</NetworkName>
+      <NetworkName>vodafone AU</NetworkName>
       <NWID>NW01458</NWID>
     </NetworkInfo>
     <NetworkInfo>
       <MCCMNC>50506</MCCMNC>
-      <NetworkName>Vodafone AU</NetworkName>
+      <NetworkName>vodafone AU</NetworkName>
       <NWID>NW01458</NWID>
     </NetworkInfo>
     <NetworkInfo>
@@ -80,12 +80,12 @@
           <LCDStatus>off</LCDStatus>
         </FastDormancy>
         <FastDormancy>
-          <NetworkName>Vodafone AU</NetworkName>
+          <NetworkName>vodafone AU</NetworkName>
           <FastDormancyEnableStatus>on</FastDormancyEnableStatus>
           <LCDStatus>on</LCDStatus>
         </FastDormancy>
         <FastDormancy>
-          <NetworkName>Vodafone AU</NetworkName>
+          <NetworkName>vodafone AU</NetworkName>
           <FastDormancyEnableStatus>on</FastDormancyEnableStatus>
           <LCDStatus>off</LCDStatus>
         </FastDormancy>
@@ -99,13 +99,9 @@
           <WbAmrCodec>on</WbAmrCodec>
         </WbAmr>
         <WbAmr>
-          <NetworkName>Vodafone AU</NetworkName>
+          <NetworkName>vodafone AU</NetworkName>
           <WbAmrCodec>on</WbAmrCodec>
         </WbAmr>
-        <NbSOSNumber>1</NbSOSNumber>
-        <SOSNumber>000, 112</SOSNumber>
-        <NbSOSNumberNoSIM>1</NbSOSNumberNoSIM>
-        <SOSNumberNoSIM>000, 112, 911, 999, 08, 110, 118, 119</SOSNumberNoSIM>
         <AutoProfile>on</AutoProfile>
         <AutoVoicemail>on</AutoVoicemail>
         <AutoEmailAccount>off</AutoEmailAccount>
@@ -121,12 +117,17 @@
         <DefLanguage>en_AU</DefLanguage>
         <DefLanguageNoSIM>en_AU</DefLanguageNoSIM>
         <ContinuousInput>enable</ContinuousInput>
+        <T9Language>english</T9Language>
+        <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
+        </DateTimeFormat>
       </Phone>
     </Main>
     <Messages>
       <NbVoicemail>3</NbVoicemail>
       <Voicemail>
         <NetworkName>Telstra</NetworkName>
+        <VoicemailName>MessageBank</VoicemailName>
         <TelNum>+61101</TelNum>
       </Voicemail>
       <Voicemail>
@@ -134,7 +135,7 @@
         <TelNum>+61411000321</TelNum>
       </Voicemail>
       <Voicemail>
-        <NetworkName>Vodafone AU</NetworkName>
+        <NetworkName>vodafone AU</NetworkName>
         <TelNum>121</TelNum>
       </Voicemail>
       <SMS>
@@ -156,6 +157,9 @@
         </MmsReceiving>
       </MMS>
     </Messages>
+    <Wifi>
+      <WifiEnableStatus>on</WifiEnableStatus>
+    </Wifi>
     <Multimedia>
       <Camera>
         <ShutterSound>off</ShutterSound>
@@ -206,7 +210,7 @@
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>4</NbNetProfile>
-        <NetworkName>Vodafone AU</NetworkName>
+        <NetworkName>vodafone AU</NetworkName>
         <ProfBrowser>Vodafone AU</ProfBrowser>
         <ProfMMS>Vodafone AU MMS</ProfMMS>
         <ProfEmail>Vodafone AU</ProfEmail>
@@ -231,7 +235,6 @@
         <IpVersion>ipv6</IpVersion>
         <Editable>no</Editable>
         <ProfileName>Telstra Internet</ProfileName>
-        <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
         <Auth>none</Auth>
         <Bearer>ps</Bearer>
         <Protocol>http</Protocol>
@@ -314,7 +317,6 @@
         <IpVersion>ipv4</IpVersion>
         <Editable>yes</Editable>
         <ProfileName>Mobile Data</ProfileName>
-        <URL>http://www.google.com/m?client={CID}&amp;source=android-home</URL>
         <Auth>none</Auth>
         <Bearer>ps</Bearer>
         <Protocol>http</Protocol>
@@ -456,7 +458,7 @@
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>Vodafone AU</NetworkName>
+        <NetworkName>vodafone AU</NetworkName>
         <IpVersion>ipv4v6</IpVersion>
         <RoamingIpVersion>ipv4v6</RoamingIpVersion>
         <Editable>no</Editable>
@@ -471,7 +473,7 @@
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>Vodafone AU</NetworkName>
+        <NetworkName>vodafone AU</NetworkName>
         <IpVersion>ipv4v6</IpVersion>
         <RoamingIpVersion>ipv4v6</RoamingIpVersion>
         <Editable>no</Editable>
@@ -490,7 +492,7 @@
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>Vodafone AU</NetworkName>
+        <NetworkName>vodafone AU</NetworkName>
         <IpVersion>ipv4v6</IpVersion>
         <RoamingIpVersion>ipv4v6</RoamingIpVersion>
         <Editable>no</Editable>
@@ -506,7 +508,7 @@
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>Vodafone AU</NetworkName>
+        <NetworkName>vodafone AU</NetworkName>
         <IpVersion>ipv4v6</IpVersion>
         <RoamingIpVersion>ipv4v6</RoamingIpVersion>
         <Editable>no</Editable>

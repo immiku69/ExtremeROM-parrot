@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0004</CSCEdition>
+    <CSCEdition>ED0002</CSCEdition>
     <Country>SOUTH AFRICA</Country>
     <CountryISO>ZA</CountryISO>
     <Region>MEA</Region>
     <SalesCode>XFA</SalesCode>
-    <NbNetworkInfo>48</NbNetworkInfo>
+    <NbNetworkInfo>47</NbNetworkInfo>
     <NetworkInfo>
       <MCCMNC>65501</MCCMNC>
       <NetworkName>Vodacom</NetworkName>
@@ -316,12 +316,6 @@
       <NWID>NW01584</NWID>
       <SkipCscSelection>false</SkipCscSelection>
     </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>64084</MCCMNC>
-      <NetworkName>Econet Wireless Zimbabwe</NetworkName>
-      <NWID>NW02388</NWID>
-      <SkipCscSelection>false</SkipCscSelection>
-    </NetworkInfo>
   </GeneralInfo>
   <Settings>
     <Main>
@@ -370,6 +364,7 @@
         <DefLanguageNoSIM>en_ZA</DefLanguageNoSIM>
         <T9Enabling>enable</T9Enabling>
         <DateTimeFormat>
+          <DateFormat>ddmmyyyy</DateFormat>
           <TimeFormat>24h</TimeFormat>
         </DateTimeFormat>
       </Phone>
@@ -446,6 +441,7 @@
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>25</Index>
         <BookmarkName>Galaxy Shop</BookmarkName>
         <URL>https://www.samsung.com/za/mobile/?cid=za_ow_app_s-internet_none_none_bookmark_bookmark_202008_none</URL>
       </Bookmark>
@@ -454,7 +450,7 @@
       </eManual>
     </Browser>
     <Connections>
-      <NbProfileHandle>45</NbProfileHandle>
+      <NbProfileHandle>44</NbProfileHandle>
       <ProfileHandle>
         <NbNetProfile>4</NbNetProfile>
         <NetworkName>Vodacom</NetworkName>
@@ -715,22 +711,16 @@
         <ProfBrowser>TNM INTERNET</ProfBrowser>
       </ProfileHandle>
       <ProfileHandle>
-        <NbNetProfile>2</NbNetProfile>
+        <NbNetProfile>1</NbNetProfile>
         <NetworkName>MTN Zambia</NetworkName>
         <ProfBrowser>Internet</ProfBrowser>
-        <ProfIMS>IMS</ProfIMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>1</NbNetProfile>
         <NetworkName>Zamtel</NetworkName>
         <ProfBrowser>zamtel</ProfBrowser>
       </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>1</NbNetProfile>
-        <NetworkName>Econet Wireless Zimbabwe</NetworkName>
-        <ProfBrowser>Econet Internet</ProfBrowser>
-      </ProfileHandle>
-      <NbProfile>94</NbProfile>
+      <NbProfile>92</NbProfile>
       <Profile>
         <NetworkName>Vodacom</NetworkName>
         <RoamingIpVersion>ipv4v6</RoamingIpVersion>
@@ -1801,6 +1791,9 @@
         <PSparam>
           <APN>internet</APN>
         </PSparam>
+        <CSparam>
+          <TelNum>SUBSCRIBED</TelNum>
+        </CSparam>
       </Profile>
       <Profile>
         <NetworkName>Mascom</NetworkName>
@@ -2129,8 +2122,8 @@
       </Profile>
       <Profile>
         <NetworkName>MTN Zambia</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <RoamingIpVersion>ipv4v6</RoamingIpVersion>
+        <IpVersion>ipv4</IpVersion>
+        <RoamingIpVersion>ipv4</RoamingIpVersion>
         <Editable>no</Editable>
         <HiddenStatus>show</HiddenStatus>
         <ProfileName>Internet</ProfileName>
@@ -2159,38 +2152,6 @@
         </Proxy>
         <PSparam>
           <APN>internet</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>MTN Zambia</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <RoamingIpVersion>ipv4v6</RoamingIpVersion>
-        <Editable>no</Editable>
-        <ProfileName>IMS</ProfileName>
-        <Auth>normal</Auth>
-        <MTUSize>1300</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>ims</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Econet Wireless Zimbabwe</NetworkName>
-        <IpVersion>ipv4v6</IpVersion>
-        <RoamingIpVersion>ipv4v6</RoamingIpVersion>
-        <Editable>no</Editable>
-        <HiddenStatus>show</HiddenStatus>
-        <ProfileName>Econet Internet</ProfileName>
-        <Auth>normal</Auth>
-        <Bearer>ps</Bearer>
-        <Protocol>http</Protocol>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>econet.net</APN>
         </PSparam>
       </Profile>
     </Connections>
