@@ -100,7 +100,7 @@ A big thanks goes to the following for their invaluable contributions in no part
 - **[Saad](https://github.com/saadelasfur)** for help with build system
 - **[Vince](https://github.com/vinceboberly)** for help with kernel upstream
 - **Nhat Vo** for Google Telemetry app removal
-- **Code Malaya** for SPen Air Actions
+- **[Code Malaya](https://github.com/jomiejoshiro)** for SPen Air Actions
 - **[Renox](https://github.com/renoxtv)** for overlay patches and testing
 - **[Ksawlii](https://github.com/Ksawlii)** for FOD animation patch
 - **[nalz0](https://github.com/nalz0)** for Multi-User support
