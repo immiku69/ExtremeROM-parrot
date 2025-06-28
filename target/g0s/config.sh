@@ -15,8 +15,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-# Device configuration file for Galaxy S22 Plus (Exynos) (r0s)
-TARGET_NAME="Galaxy S22 Plus (Exynos)"
+# Device configuration file for Galaxy S22+ (Exynos) (g0s)
+TARGET_NAME="Galaxy S22+ (Exynos)"
 TARGET_CODENAME="g0s"
 TARGET_ASSERT_MODEL=("SM-S906B")
 TARGET_PLATFORM="exynos2200"
