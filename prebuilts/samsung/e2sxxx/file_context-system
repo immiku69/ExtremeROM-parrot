@@ -8,7 +8,7 @@
 /system/app/UwbRROverlayMccMncRegulation/UwbRROverlayMccMncRegulation\.apk u:object_r:system_file:s0
 /system/bin u:object_r:system_file:s0
 /system/bin/bootanimation u:object_r:bootanim_exec:s0
-/system/bin/mafpc_write u:object_r:bootanim_exec:s0
+/system/bin/mafpc_write u:object_r:mafpc_write_exec:s0
 /system/bin/surfaceflinger u:object_r:surfaceflinger_exec:s0
 /system/etc/init/init\.system\.uwb\.rc u:object_r:system_file:s0
 /system/etc/permissions/com\.samsung\.android\.uwb_extras\.xml u:object_r:system_file:s0
