@@ -62,5 +62,3 @@
 /system/priv-app/SamsungCamera/oat/arm64/SamsungCamera\.art u:object_r:system_file:s0
 /system/priv-app/SamsungCamera/oat/arm64/SamsungCamera\.odex u:object_r:system_file:s0
 /system/priv-app/SamsungCamera/oat/arm64/SamsungCamera\.vdex u:object_r:system_file:s0
-/system/priv-app/SamsungCamera/SamsungCamera\.apk u:object_r:system_file:s0
-/system/priv-app/SamsungCamera/SamsungCamera\.apk\.prof u:object_r:system_file:s0
