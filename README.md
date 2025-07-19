@@ -39,7 +39,6 @@ Any form of contribution, suggestions, bug report or feature request for the pro
 - Adaptive Refresh Rate support (for some models)
 - Multi-User support
 - Stock models in Settings and user apps
-- Semi-Removed Telemetry and tracing
 - High end animations
 - Native/live blur support
 - Custom ExtremeROM Ringtones
