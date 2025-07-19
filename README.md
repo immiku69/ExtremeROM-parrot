@@ -107,7 +107,9 @@ A big thanks goes to the following for their invaluable contributions in no part
 - **[Ksawlii](https://github.com/Ksawlii)** for FOD animation patch
 - **[nalz0](https://github.com/nalz0)** for Multi-User support
 - **[EndaDwagon](https://github.com/EndaDwagon)** for the big majority of the ExtremeROM Wiki
-- **[Oskar](https://github.com/osrott61-gh), [Mesazane](https://github.com/Mesazane)** for Building alot before we started using actions
+- **[Oskar](https://github.com/osrott61-gh)** N20/S22 Odinpacks, Building alot before we started using actions, some parts of the Wiki
+- **[Mesazane](https://github.com/Mesazane)** for Building alot before we started using actions
+- **[Dupa](https://github.com/dupazlasu)** for Maintaining S22 Series (ROM + Kernel)
 - **[RayShocker](https://github.com/RayShocker)** for HRM fix
 - **@april865** (TG) for ExtremeROM Nexus banner
 - And everyone else who aided in testing, wiki, translations etc!
