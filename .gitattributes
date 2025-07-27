@@ -26,4 +26,3 @@ platform/exynos9820/patches/vendor/vendor/** binary
 platform/exynos990/patches/vendor/vendor/** binary
 # Device-specific prebuilt blobs
 target/r8s/patches/vendor/vendor/** binary
-prebuilts/samsung/r0qxxx/system/priv-app/wallpaper-res/wallpaper-res.apk filter=lfs diff=lfs merge=lfs -text
