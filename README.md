@@ -1,11 +1,8 @@
-<h1 align="center">
-  <img loading="lazy" src="readme-res/banner.png"/>
-</h1>
 <p align="center">
-  <a href="https://github.com/ExtremeXT/ExtremeROM/blob/fifteen/LICENSE"><img loading="lazy" src="https://img.shields.io/github/license/ExtremeXT/ExtremeROM?style=for-the-badge&logo=github"/></a>
-  <a href="https://github.com/ExtremeXT/ExtremeROM/commits/fifteen"><img loading="lazy" src="https://img.shields.io/github/last-commit/ExtremeXT/ExtremeROM/fifteen?style=for-the-badge"/></a>
-  <a href="https://github.com/ExtremeXT/ExtremeROM/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/ExtremeXT/ExtremeROM?style=for-the-badge"/></a>
-  <a href="https://github.com/ExtremeXT/ExtremeROM/graphs/contributors"><img loading="lazy" src="https://img.shields.io/github/contributors/ExtremeXT/ExtremeROM?style=for-the-badge"/></a>
+  <a href="https://github.com/yoro1836/ExtremeROM-parrot/blob/fifteen/LICENSE"><img loading="lazy" src="https://img.shields.io/github/license/yoro1836/ExtremeROM-parrot?style=for-the-badge&logo=github"/></a>
+  <a href="https://github.com/yoro1836/ExtremeROM-parrot/commits/fifteen"><img loading="lazy" src="https://img.shields.io/github/last-commit/yoro1836/ExtremeROM-parrot/fifteen?style=for-the-badge"/></a>
+  <a href="https://github.com/yoro1836/ExtremeROM-parrot/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/yoro1836/ExtremeROM-parrot?style=for-the-badge"/></a>
+  <a href="https://github.com/yoro1836/ExtremeROM-parrot/graphs/contributors"><img loading="lazy" src="https://img.shields.io/github/contributors/yoro1836/ExtremeROM-parrot?style=for-the-badge"/></a>
 </p>
 <p align="center">ExtremeROM Parrot is a work-in-progress custom firmware for Samsung Galaxy devices.</p>
 
