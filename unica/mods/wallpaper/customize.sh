@@ -1,10 +1,12 @@
+TARGET_FIRMWARE_PATH="$FW_DIR/$(echo -n "$TARGET_FIRMWARE" | sed 's./._.g' | rev | cut -d "_" -f2- | rev)"
+
 echo "Replacing wallpaper-res.apk with target's stock wallpaper-res.apk..."
 
 # Delete existing wallpaper-res.apk if exists
 DELETE_FROM_WORK_DIR "system" "system/priv-app/wallpaper-res/wallpaper-res.apk"
 
 # Add wallpaper-res.apk from target firmware
-ADD_TO_WORK_DIR "r0qxxx" "system" "system/priv-app/wallpaper-res/wallpaper-res.apk" 0 0 644 "u:object_r:system_file:s0"
+ADD_TO_WORK_DIR "$TARGET_FIRMWARE_PATH" "system" "system/priv-app/wallpaper-res/wallpaper-res.apk" 0 0 644 "u:object_r:system_file:s0"
 
 sed -i "/system\/system\/priv-app\/wallpaper-res/d" "$WORK_DIR/configs/fs_config-system" \
     && sed -i "/system\/system\/priv-app\/wallpaper-res/d" "$WORK_DIR/configs/file_context-system"
