@@ -68,9 +68,14 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 * flag removal etc.
 */
 ```
+A big thanks goes to the following for their invaluable contributions in no particular order (MORE INFO AND PEOPLE: TO BE WRITTEN)
+
+# ExtremeROM Parrot credits:
+- **[osrott61-gh](https://github.com/osrott61-gh)** reference some commits for idea
+- **[AK-Papon](https://github.com/AK-Papon)** Kernel base and Rom Building tips
+
 
 # Original ExtremeROM credits:
-A big thanks goes to the following for their invaluable contributions in no particular order (MORE INFO AND PEOPLE: TO BE WRITTEN)
 - **[salvogiangri](https://github.com/salvogiangri)** for the UN1CA build system, OneUI patches, and general help and support while developing
 - **[Ocin4Ever](https://github.com/Ocin4Ever)** for a lot of help especially on smali, advice and emotional support :D
 - **[Igor](https://github.com/BotchedRPR)** for getting me into porting, teaching me the basics, and emotional support down the road
