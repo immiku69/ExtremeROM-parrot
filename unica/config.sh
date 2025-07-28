@@ -16,9 +16,9 @@
 #
 
 # UN1CA configuration file
-ROM_VERSION="2.5.0-nxt"
+ROM_VERSION="1.0.0-nxt"
 ROM_VERSION+="-$(git rev-parse --short HEAD)"
-ROM_CODENAME="parrot"
+ROM_CODENAME="Parrot"
 
 # Source ROM firmware
 case "$TARGET_SINGLE_SYSTEM_IMAGE" in
