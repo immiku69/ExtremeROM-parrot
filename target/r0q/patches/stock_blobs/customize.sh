@@ -17,6 +17,10 @@ ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/priv-app/GameDriver-SM8450/G
 echo "Add stock WFD blobs"
 ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/lib64/libhdcp2.so" 0 0 644 "u:object_r:system_lib_file:s0"
 
+echo "Add stock camera libs"
+ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "vendor" "lib/liblivefocus_capture_engine.so" 0 0 644 "u:object_r:vendor_lib_file:s0"
+ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "vendor" "lib/liblivefocus_preview_engine.so" 0 0 644 "u:object_r:vendor_lib_file:s0"
+
 echo "Add stock libhwui"
 ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/lib/libhwui.so" 0 0 644 "u:object_r:system_lib_file:s0"
 ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/lib64/libhwui.so" 0 0 644 "u:object_r:system_lib_file:s0"
