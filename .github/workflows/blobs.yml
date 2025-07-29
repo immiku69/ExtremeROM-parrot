@@ -86,11 +86,11 @@ jobs:
           node-version: 'latest'
 
       - name: Build dependencies
-        run: source ./buildenv.sh z3s
+        run: source ./buildenv.sh r0q
 
       - name: Update prebuilt blobs
         run: |
-          source ./buildenv.sh z3s
+          source ./buildenv.sh r0q
           ./scripts/internal/update_prebuilt_blobs.sh ${{ matrix.path }}
           echo "PDA_BUILD=$(cat ./${{ matrix.path }}/.current | cut -d "/" -f 1)" >> $GITHUB_ENV
 
