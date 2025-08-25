@@ -58,6 +58,7 @@ app/Maps
 app/Photos
 app/YouTube
 overlay/GmsConfigOverlaySearchSelector.apk
+priv-app/Messages
 priv-app/SearchSelector
 "
 
@@ -65,13 +66,20 @@ SYSTEM_DEBLOAT+="
 system/app/CarrierDefaultApp
 system/app/ccinfo
 system/app/ChromeCustomizations
+system/app/DRParser
+system/app/DictDiotekForSec
 system/app/Fast
+system/app/FactoryAirCommandManager
+system/app/FactoryCameraFB
 system/app/FBAppManager_NS
 system/app/KidsHome_Installer
+system/app/HMT
 system/app/MAPSAgent
 system/app/MDMApp
+system/app/MoccaMobile
 system/app/PlayAutoInstallConfig
 system/app/Rampart
+system/app/SamsungCalendar
 system/app/SamsungPassAutofill_v1
 system/app/SamsungTTSVoice_ar_AE_m00_ICLM
 system/app/SamsungTTSVoice_de_DE_f00
@@ -88,6 +96,7 @@ system/app/SamsungTTSVoice_pt_BR_f00
 system/app/SamsungTTSVoice_ru_RU_f00
 system/app/SamsungTTSVoice_th_TH_f00
 system/app/SamsungTTSVoice_vi_VN_f00
+system/app/SmartReminder
 system/app/SilentLog
 system/app/SimAppDialog
 system/app/Traceur
@@ -105,19 +114,30 @@ system/etc/permissions/privapp-permissions-com.microsoft.skydrive.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.app.updatecenter.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.authfw.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.carkey.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.cidmanager.xml
+system/etc/permissions/privapp-permissions-com.sec.android.app.dexonpc.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.dkey.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.game.gamehome.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.game.gos.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.game.gametools.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.providers.factory.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.ipsgeofence.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.samsungpass.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.samsungpositioning.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.spayfw.xml
+system/etc/permissions/privapp-permissions-com.sec.android.app.factorykeystring.xml
 system/etc/permissions/privapp-permissions-com.samsung.oda.service.xml
 system/etc/permissions/privapp-permissions-com.sec.android.diagmonagent.xml
 system/etc/permissions/privapp-permissions-com.sec.android.soagent.xml
 system/etc/permissions/privapp-permissions-com.sec.bcservice.xml
+system/etc/permissions/privapp-permissions-com.sec.epdgtestapp.xml
+system/etc/permissions/privapp-permissions-com.sec.facatfunction.xml
+system/etc/permissions/privapp-permissions-com.sem.factoryapp.xml
 system/etc/permissions/privapp-permissions-com.sec.imslogger.xml
 system/etc/permissions/privapp-permissions-com.sec.spp.push.xml
 system/etc/permissions/privapp-permissions-com.skms.android.agent.xml
 system/etc/permissions/privapp-permissions-com.wssyncmldm.xml
+system/etc/permissions/privapp-permissions-de.axelspringer.yana.zeropage.xml
 system/etc/permissions/privapp-permissions-meta.xml
 system/etc/PF_TA
 system/etc/sysconfig/digitalkey.xml
@@ -134,21 +154,39 @@ system/priv-app/AREmoji
 system/priv-app/AREmojiEditor
 system/priv-app/AuthFramework
 system/priv-app/BCService
+system/priv-app/CIDManager
+system/priv-app/DeviceKeystring
+system/priv-app/DeXonPC
 system/priv-app/DiagMonAgent94
 system/priv-app/DigitalKey
 system/priv-app/EnhancedAttestationAgent
 system/priv-app/FBInstaller_NS
 system/priv-app/FBServices
 system/priv-app/FotaAgent
+system/priv-app/FacAtFunction
+system/priv-app/FactoryTestProvider
+system/priv-app/KLMSAgent
+system/priv-app/knoxanalyticsagent
+system/priv-app/KnoxCore
+system/priv-app/KnoxPushManager
+system/priv-app/knoxvpnproxyhandler
+system/priv-app/KPECore
 system/priv-app/ImsLogger
 system/priv-app/IpsGeofence
+system/priv-app/GameHome
+system/priv-app/GameOptimizingService
+system/priv-app/GameTools_Dream
+system/priv-app/ModemServiceMode
+system/priv-app/LinkToWindowsService
 system/priv-app/OdaService
 system/priv-app/OMCAgent5
 system/priv-app/OneDrive_Samsung_v3
 system/priv-app/PaymentFramework
+system/priv-app/SEMFactoryApp
 system/priv-app/SamsungCarKeyFw
 system/priv-app/SamsungPass
 system/priv-app/SamsungPositioning
+system/priv-app/SmartEpdgTestApp
 system/priv-app/SKMSAgent
 system/priv-app/SOAgent75
 system/priv-app/SPPPushClient
@@ -308,4 +346,20 @@ if $SOURCE_IS_ESIM_SUPPORTED; then
         system/priv-app/EuiccService
         "
     fi
+fi
+
+# fabric_crypto
+if [[ "$TARGET_API_LEVEL" -lt 34 ]]; then
+    SYSTEM_DEBLOAT+="
+    system/bin/fabric_crypto
+    system/etc/init/fabric_crypto.rc
+    system/etc/permissions/FabricCryptoLib.xml
+    system/etc/permissions/privapp-permissions-com.samsung.android.kmxservice.xml
+    system/etc/vintf/manifest/fabric_crypto_manifest.xml
+    system/framework/FabricCryptoLib.jar
+    system/lib64/com.samsung.security.fabric.cryptod-V1-cpp.so
+    system/lib64/vendor.samsung.hardware.security.fkeymaster-V1-cpp.so
+    system/lib64/vendor.samsung.hardware.security.fkeymaster-V1-ndk.so
+    system/priv-app/KmxService
+    "
 fi
