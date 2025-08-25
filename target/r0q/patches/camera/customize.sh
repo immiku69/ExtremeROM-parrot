@@ -48,6 +48,7 @@ system/lib64/libMultiFrameProcessing30.camera.samsung.so
 system/lib64/libMultiFrameProcessing30.snapwrapper.camera.samsung.so
 system/lib64/libMultiFrameProcessing30Tuning.camera.samsung.so
 system/lib64/libPortraitDistortionCorrection.arcsoft.so
+system/lib64/libsnap_aidl.snap.samsung.so
 system/lib64/libSlowShutter_jni.media.samsung.so
 system/lib64/libSwIsp_core.camera.samsung.so
 system/lib64/libSwIsp_wrapper_v1.camera.samsung.so
@@ -64,6 +65,7 @@ system/lib64/libsamsung_videoengine_9_0.so
 system/lib64/libsuperresolution_raw.arcsoft.so
 system/lib64/libsuperresolutionraw_wrapper_v2.camera.samsung.so
 system/lib64/libtensorflowLite.camera.samsung.so
+system/lib64/vendor.samsung.hardware.snap-V3-ndk.so
 "
 for blob in $BLOBS_LIST
 do
