@@ -166,11 +166,6 @@ system/priv-app/FotaAgent
 system/priv-app/FacAtFunction
 system/priv-app/FactoryTestProvider
 system/priv-app/KLMSAgent
-system/priv-app/knoxanalyticsagent
-system/priv-app/KnoxCore
-system/priv-app/KnoxPushManager
-system/priv-app/knoxvpnproxyhandler
-system/priv-app/KPECore
 system/priv-app/ImsLogger
 system/priv-app/IpsGeofence
 system/priv-app/GameHome
