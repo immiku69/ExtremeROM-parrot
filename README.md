@@ -76,7 +76,7 @@ A big thanks goes to the following for their invaluable contributions in no part
 # ExtremeROM Parrot credits:
 - **[osrott61-gh](https://github.com/osrott61-gh)** reference some commits for idea
 - **[AK-Papon](https://github.com/AK-Papon)** Kernel base and Rom Building tips
-
+- **[lyghtlychee](https://github.com/lyghtlychee)** Thanks for Fixing Camera Error, Fix Misc things and Create Banner
 
 # Original ExtremeROM credits:
 - **[salvogiangri](https://github.com/salvogiangri)** for the UN1CA build system, OneUI patches, and general help and support while developing
