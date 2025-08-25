@@ -1,3 +1,6 @@
+<h1 align="center">
+  <img loading="lazy" src="readme-res/banner-parrot.png"/>
+</h1>
 <p align="center">
   <a href="https://github.com/yoro1836/ExtremeROM-parrot/blob/fifteen/LICENSE"><img loading="lazy" src="https://img.shields.io/github/license/yoro1836/ExtremeROM-parrot?style=for-the-badge&logo=github"/></a>
   <a href="https://github.com/yoro1836/ExtremeROM-parrot/commits/fifteen"><img loading="lazy" src="https://img.shields.io/github/last-commit/yoro1836/ExtremeROM-parrot/fifteen?style=for-the-badge"/></a>
