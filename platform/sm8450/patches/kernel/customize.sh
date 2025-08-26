@@ -1,6 +1,6 @@
 # [
-EXTREMEKRNL_REPO="https://github.com/yoro1836/zero_kernel/releases/download/Zero-2.0-r1/Zero-2.0-5.10.240-SUKISU-boot-raw.img"
-KERNELSU_MANAGER_APK="https://github.com/SukiSU-Ultra/SukiSU-Ultra/releases/download/v3.1.8/SukiSU_v3.1.8_13250-release.apk"
+EXTREMEKRNL_REPO="https://github.com/yoro1836/zero_kernel/releases/download/v1.0.0/Zero-2.0.img"
+KERNELSU_MANAGER_APK="https://github.com/SukiSU-Ultra/SukiSU-Ultra/releases/download/v3.1.9/SukiSU_v3.1.9_13307-release.apk"
 
 REPLACE_KERNEL_BINARIES()
 {
@@ -23,9 +23,9 @@ REPLACE_KERNEL_BINARIES()
 ADD_MANAGER_APK_TO_PRELOAD()
 {
     # https://github.com/tiann/KernelSU/issues/886
-    local APK_PATH="system/preload/KernelSU-Next/com.rifsxd.ksunext-mesa==/base.apk"
+    local APK_PATH="system/preload/SukiSU-Ultra/com.sukisu.ultra==/base.apk"
 
-    echo "Adding KernelSU-Next.apk to preload apps"
+    echo "Adding SukiSU-Ultra.apk to preload apps"
     mkdir -p "$WORK_DIR/system/$(dirname "$APK_PATH")"
     curl -L -s -o "$WORK_DIR/system/$APK_PATH" -z "$WORK_DIR/system/$APK_PATH" "$KERNELSU_MANAGER_APK"
 
