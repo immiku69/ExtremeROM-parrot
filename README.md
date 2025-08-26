@@ -74,9 +74,9 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 A big thanks goes to the following for their invaluable contributions in no particular order (MORE INFO AND PEOPLE: TO BE WRITTEN)
 
 # ExtremeROM Parrot credits:
-- **[osrott61-gh](https://github.com/osrott61-gh)** reference some commits for idea
-- **[AK-Papon](https://github.com/AK-Papon)** Kernel base and Rom Building tips
-- **[lyghtlychee](https://github.com/lyghtlychee)** Thanks for Fixing Camera Error, Fix Misc things and Create Banner
+- **[osrott61-gh](https://github.com/osrott61-gh)** for referencing some commits for idea
+- **[AK-Papon](https://github.com/AK-Papon)** for his kernel base and rom building tips
+- **[lyghtlychee](https://github.com/lyghtlychee)** for fixing camera keep crashing, some Misc things and the banner
 
 # Original ExtremeROM credits:
 - **[salvogiangri](https://github.com/salvogiangri)** for the UN1CA build system, OneUI patches, and general help and support while developing
