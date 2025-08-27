@@ -67,6 +67,7 @@ SYSTEM_DEBLOAT+="
 system/app/ARCore
 system/app/BBCAgent
 system/app/BookmarkProvider
+system/app/BixbyWakeup
 system/app/CarrierDefaultApp
 system/app/ccinfo
 system/app/ChromeCustomizations
@@ -166,6 +167,8 @@ system/priv-app/AREmojiEditor
 system/priv-app/AuthFramework
 system/priv-app/AvatarEmojiSticker
 system/priv-app/BCService
+system/priv-app/Bixby
+system/priv-app/CpAgent
 system/priv-app/CIDManager
 system/priv-app/DeviceKeystring
 system/priv-app/DeXonPC
@@ -201,6 +204,8 @@ system/priv-app/SmartSwitchAssistant
 system/priv-app/SOAgent75
 system/priv-app/SPPPushClient
 system/priv-app/StickerFaceARAvatar
+system/priv-app/Tag
+system/priv-app/TalkbackSE
 system/priv-app/YourPhone_P1_5
 "
 
