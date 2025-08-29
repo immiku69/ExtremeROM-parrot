@@ -1,21 +1,26 @@
-name: Auto-merge PRs
+name: Dependabot auto-merge
+on: pull_request
 
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+permissions:
+  pull-requests: write
+  contents: write
 
 jobs:
-  auto-merge:
+  dependabot:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-      contents: write
-
+    if: |
+      github.event.pull_request.user.login == 'dependabot[bot]' &&
+      contains(github.event.pull_request.labels.*.name, 'auto-merge')
+      
     steps:
-      - name: Auto-merge on conditions
-        uses: pascalgn/automerge-action@v0.16.4
+      - name: Approve a PR
+        run: gh pr review --approve "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Auto-merge the PR
+        uses: pascalgn/automerge-action@v0.16.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MERGE_METHOD: squash
-          MERGE_LABELS: "auto-merge"
-          MERGE_TITLE_REGEX: "^(build(deps):|Update prebuilts/samsung)"
