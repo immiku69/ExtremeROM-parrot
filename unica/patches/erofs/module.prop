@@ -1,0 +1,4 @@
+id=erofs
+name=erofs patches
+author=yoro1836
+description=patch fstab for support erofs.
