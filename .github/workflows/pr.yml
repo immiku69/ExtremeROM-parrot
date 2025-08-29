@@ -22,7 +22,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MERGE_METHOD: squash
-          MERGE_LABELS: "auto-merge"
 
       - name: Auto-merge prebuilt blobs PRs
         if: github.event.pull_request.user.login == 'github-actions[bot]' && contains(github.event.pull_request.title, 'Update prebuilt blobs')
