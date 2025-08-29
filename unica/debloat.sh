@@ -87,7 +87,6 @@ system/app/PlayAutoInstallConfig
 system/app/Rampart
 system/app/SamsungCalendar
 system/app/SamsungPassAutofill_v1
-system/app/SketchBook
 system/app/SamsungTTS
 system/app/SamsungTTSVoice_ar_AE_m00_ICLM
 system/app/SamsungTTSVoice_de_DE_f00
@@ -130,8 +129,6 @@ system/etc/permissions/privapp-permissions-com.samsung.android.cidmanager.xml
 system/etc/permissions/privapp-permissions-com.sec.android.app.dexonpc.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.dkey.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.game.gamehome.xml
-system/etc/permissions/privapp-permissions-com.samsung.android.game.gos.xml
-system/etc/permissions/privapp-permissions-com.samsung.android.game.gametools.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.providers.factory.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.ipsgeofence.xml
 system/etc/permissions/privapp-permissions-com.samsung.android.samsungpass.xml
@@ -184,8 +181,6 @@ system/priv-app/KLMSAgent
 system/priv-app/ImsLogger
 system/priv-app/IpsGeofence
 system/priv-app/GameHome
-system/priv-app/GameOptimizingService
-system/priv-app/GameTools_Dream
 system/priv-app/ModemServiceMode
 system/priv-app/LinkToWindowsService
 system/priv-app/OdaService
