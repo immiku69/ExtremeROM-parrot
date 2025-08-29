@@ -1,25 +1,31 @@
-name: Dependabot auto-merge
-on: pull_request
+name: Auto-merge PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 permissions:
   pull-requests: write
   contents: write
 
 jobs:
-  dependabot:
+  auto-merge:
     runs-on: ubuntu-latest
     if: |
-      github.event.pull_request.user.login == 'dependabot[bot]' &&
-      contains(github.event.pull_request.labels.*.name, 'auto-merge')
-      
-    steps:
-      - name: Approve a PR
-        run: gh pr review --approve "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      github.event.pull_request.user.login == 'dependabot[bot]' ||
+      github.event.pull_request.user.login == 'github-actions[bot]'
 
-      - name: Auto-merge the PR
+    steps:
+      - name: Auto-merge Dependabot PRs
+        if: github.event.pull_request.user.login == 'dependabot[bot]'
+        uses: pascalgn/automerge-action@v0.16.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MERGE_METHOD: squash
+          MERGE_LABELS: "auto-merge"
+
+      - name: Auto-merge prebuilt blobs PRs
+        if: github.event.pull_request.user.login == 'github-actions[bot]' && contains(github.event.pull_request.title, 'Update prebuilt blobs')
         uses: pascalgn/automerge-action@v0.16.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
