@@ -54,7 +54,7 @@ jobs:
       - name: Extract source firmware
         run: |
           source ./buildenv.sh ${{ matrix.target }}
-          TARGET_FIRMWARE="$SOURCE_FIRMWARE" ./scripts/extract_fw.sh --force
+          TARGET_FIRMWARE="$SOURCE_FIRMWARE" bash -x ./scripts/extract_fw.sh --force
 
       - name: Download target firmware
         run: |
