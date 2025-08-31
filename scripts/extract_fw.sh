@@ -136,7 +136,7 @@ EXTRACT_OS_PARTITIONS()
                     [ -d "$PARTITION" ] && rm -rf "$PARTITION"
                     mkdir -p "$PARTITION"
                     fuse.erofs "$img" "tmp_out" &>/dev/null
-                    cp -a --preserve=all tmp_out/* "$PARTITION" || true
+                    cp -a --preserve=all tmp_out/* "$PARTITION"
                     ;;
                 "f2fs" | "ext4")
                     echo "Extracting $img"
