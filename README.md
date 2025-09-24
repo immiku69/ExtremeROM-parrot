@@ -74,7 +74,7 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 A big thanks goes to the following for their invaluable contributions in no particular order (MORE INFO AND PEOPLE: TO BE WRITTEN)
 
 # ExtremeROM Parrot credits:
-- **[osrott61-gh](https://github.com/osrott61-gh)** for referencing some commits for idea
+- **[osrott61-gh](https://github.com/osrott61-gh)** for Allow to use some commit as bases.
 - **[AK-Papon](https://github.com/AK-Papon)** for his kernel base and rom building tips
 - **[lyghtlychee](https://github.com/lyghtlychee)** for fixing camera keep crashing, some Misc things and the banner
 
