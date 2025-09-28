@@ -58,7 +58,6 @@ app/Maps
 app/Photos
 app/YouTube
 overlay/GmsConfigOverlaySearchSelector.apk
-priv-app/Messages
 priv-app/SearchSelector
 priv-app/FamilyLinkParentalControls
 "
@@ -67,7 +66,6 @@ SYSTEM_DEBLOAT+="
 system/app/ARCore
 system/app/BBCAgent
 system/app/BookmarkProvider
-system/app/BixbyWakeup
 system/app/CarrierDefaultApp
 system/app/ccinfo
 system/app/ChromeCustomizations
@@ -164,7 +162,6 @@ system/priv-app/AREmojiEditor
 system/priv-app/AuthFramework
 system/priv-app/AvatarEmojiSticker
 system/priv-app/BCService
-system/priv-app/Bixby
 system/priv-app/CpAgent
 system/priv-app/CIDManager
 system/priv-app/DeviceKeystring
