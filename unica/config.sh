@@ -16,7 +16,7 @@
 #
 
 # UN1CA configuration file
-ROM_VERSION="1.0.1-nxt"
+ROM_VERSION="1.0.2-nxt"
 ROM_VERSION+="-$(git rev-parse --short HEAD)"
 ROM_CODENAME="Parrot"
 
