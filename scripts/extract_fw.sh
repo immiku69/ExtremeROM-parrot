@@ -18,8 +18,6 @@
 
 # shellcheck disable=SC2162
 
-set -e
-
 # [
 GET_LATEST_FIRMWARE()
 {
